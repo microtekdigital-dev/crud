@@ -1,4 +1,4 @@
-const api = "http://127.0.0.1:8000";
+const api = "https://crud-vfxn.onrender.com";
 
 // Agregar producto
 document.getElementById("agregar").addEventListener("click", async () => {
