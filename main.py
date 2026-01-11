@@ -8,6 +8,12 @@ from fastapi.middleware.cors import CORSMiddleware
 # Crear tablas
 Base.metadata.create_all(bind=engine)
 
+origins = [
+    "https://microtekdigital-dev.github.io",  # tu frontend
+    "http://localhost:5500",                  # opcional: si probás local
+]
+
+
 app = FastAPI()
 
 app.add_middleware(
